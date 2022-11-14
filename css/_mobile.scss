@@ -1,0 +1,306 @@
+*{
+	box-sizing: border-box;
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(206, 206, 206);
+    display:flex;
+    justify-content: center;
+    line-height: 1.25;
+}
+
+h2{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: rgb(53, 50, 50);
+}
+
+h3{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: rgb(53, 50, 50);
+}
+
+.divider_h2{
+    width: 4rem;
+    height: 0.4rem;
+    background-color:  rgb(53, 50, 50);
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 10px 1px rgb(175, 172, 172);
+}
+
+a{
+    color: black;
+}
+
+/* ------------------- Main container for all grids ------------------- */
+.container{  
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    gap: 15px;
+    width: 100vw;
+    padding: 10px;
+    margin: 10px;
+    grid-template-areas:
+      "header"
+      "personal"
+      "skills"
+      "education"
+      "experience"
+      "contact";
+    transition: all 0.6s ease-in-out;
+}
+
+/* ------------------- Header container ------------------- */
+.header{
+    outline: 1px solid black;
+    grid-area: header;
+    background-image: url("../images/header_background.jpg"); /* ---- Image by kjpargeter on Freepik ---- */
+    background-size: cover;
+    background-color: rgb(0, 0, 0);
+    padding: 5px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 7px;
+    box-shadow: 5px 5px 5px 5px rgb(110, 101, 101);
+    position: relative;
+    transition: all 0.15s ease-in-out;
+    right: 0px;
+    bottom: 0px;
+}
+
+.header:hover{
+    outline: 1px solid rgb(4, 45, 83);
+    background-color: rgb(220, 239, 255);
+    box-shadow: 7px 7px 7px 7px rgb(107, 99, 99);
+    bottom:1px;
+    right:1px;
+    position: relative;
+}
+
+.header_face{
+    position:relative;
+    border-radius: 50%;
+    width: 125px;
+}
+
+.header_text{
+    padding: 5px;
+    border-radius: 10px;
+    color: rgb(219, 219, 219);
+    text-transform: uppercase;
+    background-color: rgba(86, 169, 218, 0.514);
+}
+
+header h1{
+    margin:0
+}
+
+/* ------------------- Personal container ------------------- */
+.personal{ 
+    outline: 1px solid black;
+    grid-area: personal; 
+    background-color: rgb(240, 248, 255);
+    border-radius: 7px;
+    box-shadow: 5px 5px 5px 5px rgb(110, 101, 101);
+    padding: 15px;
+    position: relative;
+    transition: all 0.15s ease-in-out;
+    right: 0px;
+    bottom: 0px;
+}
+
+.personal:hover{
+    outline: 1px solid rgb(4, 45, 83);
+    background-color: rgb(220, 239, 255);
+    box-shadow: 7px 7px 7px 7px rgb(107, 99, 99);
+    bottom:1px;
+    right:1px;
+    position: relative;
+}
+/* ------------------- Skills container ------------------- */
+.skills{ 
+    outline: 1px solid black;
+    grid-area: skills; 
+    background-color: rgb(210, 218, 224);
+    border-radius: 7px;
+    box-shadow: 5px 5px 5px 5px rgb(110, 101, 101);
+    padding: 15px;
+    position: relative;
+    transition: all 0.15s ease-in-out;
+    right: 0px;
+    bottom: 0px;
+}
+
+.skills:hover{
+    outline: 1px solid rgb(4, 45, 83);
+    background-color: rgb(220, 239, 255);
+    box-shadow: 7px 7px 7px 7px rgb(107, 99, 99);
+    bottom:1px;
+    right:1px;
+    position: relative;
+}
+
+/* ------------------- Contact container ------------------- */
+.contact{ 
+    outline: 1px solid black;
+    grid-area: contact; 
+    background-color: aliceblue;
+    border-radius: 7px;
+    box-shadow: 5px 5px 5px 5px rgb(110, 101, 101);
+    padding: 15px;
+    position: relative;
+    transition: all 0.15s ease-in-out;
+    right: 0px;
+    bottom: 0px;
+}
+
+.contact:hover{
+    outline: 1px solid rgb(4, 45, 83);
+    background-color: rgb(220, 239, 255);
+    box-shadow: 7px 7px 7px 7px rgb(107, 99, 99);
+    bottom:1px;
+    right:1px;
+    position: relative;
+}
+
+.location_icon{
+    width: 15px;
+    margin-right: 10px;
+}
+
+.location_text{
+    position:relative;
+    left:50px;
+    bottom:27px
+}
+
+.mail_icon{
+    width: 25px;
+    margin-right: 10px;
+}
+
+.mail_text{
+    position:relative;
+    left:50px;
+    bottom:35px
+}
+
+.phone_icon{
+    width: 25px;
+    margin-right: 10px;
+}
+
+.phone_text{
+    position:relative;
+    left:50px;
+    bottom:27px
+}
+
+.linkedin_icon{
+    width: 25px;
+    margin-right: 10px;
+}
+
+.linkedin_text{
+    position:relative;
+    left:50px;
+    bottom:35px
+}
+
+.github_icon{
+    width: 25px;
+    margin-right: 10px;
+}
+
+.github_text{
+    position:relative;
+    left:50px;
+    bottom:27px
+}
+/* ------------------- Education container ------------------- */
+.education{ 
+    outline: 1px solid black;
+    grid-area: education; 
+    background-color: aliceblue;
+    border-radius: 7px;
+    box-shadow: 5px 5px 5px 5px rgb(110, 101, 101);
+    padding: 15px;
+    position: relative;
+    transition: all 0.15s ease-in-out;
+    right: 0px;
+    bottom: 0px;
+}
+
+.education:hover{
+    outline: 1px solid rgb(4, 45, 83);
+    background-color: rgb(220, 239, 255);
+    box-shadow: 7px 7px 7px 7px rgb(107, 99, 99);
+    bottom:1px;
+    right:1px;
+    position: relative;
+}
+
+.education_ul > li{
+    margin-bottom: 10px;
+}
+
+/* ------------------- Experience container ------------------- */
+.experience{ 
+    outline: 1px solid black;
+    grid-area: experience;
+    background-color: rgb(210, 218, 224);
+    border-radius: 7px;
+    box-shadow: 5px 5px 5px 5px rgb(110, 101, 101);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    transition: all 0.15s ease-in-out;
+    right: 0px;
+    bottom: 0px;
+}
+
+.experience:hover{
+    outline: 1px solid rgb(4, 45, 83);
+    background-color: rgb(220, 239, 255);
+    box-shadow: 7px 7px 7px 7px rgb(107, 99, 99);
+    bottom:1px;
+    right:1px;
+    position: relative;
+}
+
+.time{
+    text-transform: uppercase;
+}
+
+.crowd_picture{
+    position: fixed;
+    bottom:0;
+    left:0;
+    width: 100vw;
+    z-index: -1;
+    opacity: 0.15;
+}
